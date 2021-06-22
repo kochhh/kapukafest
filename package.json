@@ -1,0 +1,49 @@
+{
+  "name": "kapukafest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "TAILWIND_MODE=watch vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kochhh/kapukafest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kochhh/kapukafest/issues"
+  },
+  "homepage": "https://github.com/kochhh/kapukafest#readme",
+  "dependencies": {
+    "@heroicons/vue": "^1.0.1",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "core-js": "^3.15.1",
+    "emailjs-com": "^3.1.0",
+    "firebase": "^8.6.8",
+    "tailwindcss-selection-variant": "^0.1.0",
+    "vue": "^3.0.5",
+    "vue-kinesis": "^2.0.5",
+    "vue-meta": "^2.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.1.2",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "autoprefixer": "^10.2.6",
+    "eslint": "^7.29.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.11.1",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "tailwindcss": "^2.2.2",
+    "vite": "^2.3.8"
+  }
+}

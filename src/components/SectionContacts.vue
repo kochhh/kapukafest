@@ -1,0 +1,24 @@
+<template>
+  <section class="bg-[#493b69] text-white pt-10 pb-20" id="contacts">
+    <div class="container">
+      <h2>Є питання?</h2>
+      <div class="prose">
+        <p>Контакти організаторів:</p>
+        <p>
+          Олександр:
+          <br>
+          <a href="tel:+380634025924">+380 63 4025924</a>
+          <br>
+          (група з Одеси)
+        </p>
+        <p>
+          Денис:
+          <br>
+          <a href="tel:+380678704851">+380 67 8704851</a>
+          <br>
+          (група з Києва)
+        </p>
+      </div>
+    </div>
+  </section>
+</template>

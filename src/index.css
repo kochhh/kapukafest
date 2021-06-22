@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply transition;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold mb-8;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block py-2 px-5 font-bold text-center rounded-md shadow-md border border-transparent focus:outline-none focus:ring transition disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-emerald {
+    @apply bg-emerald-500 text-white hover:bg-emerald-600 focus:ring-emerald-600 focus:ring-opacity-50 disabled:bg-emerald-500;
+  }
+
+  .btn-indigo {
+    @apply bg-indigo-500 text-white hover:bg-indigo-600 focus:ring-indigo-600 focus:ring-opacity-50 disabled:bg-indigo-500;
+  }
+
+  .btn-outline-white {
+    @apply bg-transparent text-white border-white hover:bg-white hover:bg-opacity-5 focus:ring-white focus:ring-opacity-50;
+  }
+
+  .btn-iconic {
+    @apply inline-flex items-center space-x-2;
+  }
+
+  .btn-telegram {
+    @apply bg-telegram-500 text-white hover:bg-telegram-600 focus:ring-telegram-600 focus:ring-opacity-50 disabled:bg-telegram-500;
+  }
+
+  .btn-viber {
+    @apply bg-viber-500 text-white hover:bg-viber-600 focus:ring-viber-600 focus:ring-opacity-50 disabled:bg-viber-500;
+  }
+
+  .btn-messenger {
+    @apply bg-messenger-500 text-white hover:bg-messenger-600 focus:ring-messenger-600 focus:ring-opacity-50 disabled:bg-messenger-500;
+  }
+
+  .form-control {
+    @apply w-full block rounded-md shadow-none bg-white bg-opacity-5 border-white border-opacity-60 focus:border-indigo-300 focus:outline-none focus:ring focus:ring-indigo-400 focus:ring-opacity-50 transition placeholder-white placeholder-opacity-50 focus:placeholder-opacity-25;
+  }
+
+  .form-control:-webkit-autofill,
+  .form-control:-webkit-autofill:hover,
+  .form-control:-webkit-autofill:focus,
+  .form-control:-webkit-autofill:active {
+    -webkit-text-fill-color: #fff;
+    transition: background-color 86400s;
+  }
+
+  select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23fff' stroke-opacity='.6' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  }
+
+  .prose {
+    @apply text-white;
+  }
+
+  .prose a {
+    @apply text-white font-bold underline hover:no-underline;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
