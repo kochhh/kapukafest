@@ -46,6 +46,13 @@ module.exports = {
           '50%': { transform: 'scale(1.03)' },
         }
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.white'),
+          },
+        },
+      }),
     },
   },
   variants: {

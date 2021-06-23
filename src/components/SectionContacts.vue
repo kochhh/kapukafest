@@ -1,9 +1,8 @@
 <template>
   <section class="bg-[#493b69] text-white pt-8 md:pt-10 pb-16 md:pb-20" id="contacts">
     <div class="container">
-      <h2>Є питання?</h2>
+      <h2>Контакти організаторів:</h2>
       <div class="prose">
-        <p>Контакти організаторів:</p>
         <p>
           Олександр:
           <br>

@@ -36,6 +36,14 @@ export default {
     window.addEventListener('load', () => {
       this.visible = true
     })
+
+    let vh = window.innerHeight * .01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * .01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    })
   },
 }
 </script>

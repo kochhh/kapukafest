@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen bg-gradient-to-b from-[#fd9d79] via-[#fda27c] to-[#fdab91] relative z-0 overflow-hidden" id="intro">
+  <section class="bg-gradient-to-b from-[#fd9d79] via-[#fda27c] to-[#fdab91] relative z-0 overflow-hidden" id="intro">
     <kinesis-container
       :duration="1500"
       class="absolute z-[-1] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-120 md:scale-108 w-full h-full"
@@ -46,7 +46,7 @@
     </kinesis-container>
     <div class="container pointer-events-none">
       <h1
-        class="min-h-screen flex flex-col justify-center text-center uppercase text-[#ffe2a4] mx-auto max-w-[732px] px-4 md:px-0 py-10 animated"
+        class="intro h-screen flex flex-col justify-center text-center uppercase text-[#ffe2a4] mx-auto max-w-[732px] px-4 md:px-0 py-10 animated"
         :class="{ 'is-shown': visible }"
       >
         <div class="text-base lg:text-2xl font-light tracking-widest">
@@ -67,7 +67,7 @@
       title="Гортати вниз"
       v-smooth-scroll="{ updateHistory: false }"
     >
-      <chevron-down-icon class="h-8 w-8 animate-bounce" />
+      <ChevronDownIcon class="h-8 w-8 animate-bounce" />
     </a>
   </section>
 </template>
