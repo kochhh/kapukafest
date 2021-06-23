@@ -26,6 +26,7 @@
     "core-js": "^3.15.1",
     "emailjs-com": "^3.1.0",
     "tailwindcss-selection-variant": "^0.1.0",
+    "v-smooth-scroll": "^2.0.0-beta.1",
     "vue": "^3.0.5",
     "vue-kinesis": "^2.0.5",
     "vue-meta": "^2.4.0"

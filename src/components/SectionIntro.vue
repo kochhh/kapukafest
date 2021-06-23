@@ -3,6 +3,9 @@
     <kinesis-container
       :duration="1500"
       class="absolute z-[-1] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-120 md:scale-108 w-full h-full"
+      style="display: block;"
+      aria-hidden="true"
+      hidden
     >
       <kinesis-element
         :strength="0"
@@ -43,27 +46,28 @@
     </kinesis-container>
     <div class="container pointer-events-none">
       <h1
-        class="min-h-screen flex flex-col justify-center text-center uppercase text-[#ffe2a4] mx-auto max-w-[732px] py-10 animated"
+        class="min-h-screen flex flex-col justify-center text-center uppercase text-[#ffe2a4] mx-auto max-w-[732px] px-4 md:px-0 py-10 animated"
         :class="{ 'is-shown': visible }"
       >
-        <div class="text-sm md:text-base lg:text-2xl font-light tracking-widest">
+        <div class="text-base lg:text-2xl font-light tracking-widest">
           Десятий щорiчний лiтнiй фестиваль
         </div>
         <div class="my-6 flex-shrink-0">
           <img src="/logo.svg" class="block max-w-full" width="700" height="242" alt="">
           <span class="sr-only">Карпати Kapukafest</span>
         </div>
-        <div class="md:text-xl lg:text-4xl tracking-widest">
+        <div class="text-lg md:text-xl lg:text-4xl tracking-widest">
           21–24 серпня 2021
         </div>
       </h1>
     </div>
     <a
       href="#about"
-      class="text-white animate-bounce absolute left-1/2 bottom-10 transform -translate-x-1/2 w-10 h-10 flex items-center justify-center opacity-50 hover:opacity-100"
+      class="text-white absolute left-1/2 bottom-10 transform -translate-x-1/2 w-12 h-10 flex items-center justify-center opacity-50 hover:opacity-100"
       title="Гортати вниз"
+      v-smooth-scroll="{ updateHistory: false }"
     >
-      <chevron-down-icon class="h-8 w-8" />
+      <chevron-down-icon class="h-8 w-8 animate-bounce" />
     </a>
   </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#493b69] text-white pt-10 pb-20" id="contacts">
+  <section class="bg-[#493b69] text-white pt-8 md:pt-10 pb-16 md:pb-20" id="contacts">
     <div class="container">
       <h2>Є питання?</h2>
       <div class="prose">

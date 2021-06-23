@@ -68,9 +68,12 @@
   .prose a {
     @apply text-white font-bold underline hover:no-underline;
   }
+
+  .prose ul > li:last-child {
+    @apply mb-0;
+  }
 }
 
 html {
   scroll-behavior: smooth;
 }
-

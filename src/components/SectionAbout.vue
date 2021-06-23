@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#493b69] text-white py-10" id="about">
+  <section class="bg-[#493b69] text-white py-8 md:py-10" id="about">
     <div class="container">
       <h2>Свято музики та&nbsp;гір продовжується!</h2>
       <div class="prose">

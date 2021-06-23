@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#493b69] text-white py-10" id="lineup">
+  <section class="bg-[#493b69] text-white py-8 md:py-10" id="lineup">
     <div class="container">
       <h2>Учасники</h2>
       <div class="prose">

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#493b69] text-white py-10" id="register">
+  <section class="bg-[#493b69] text-white py-8 md:py-10" id="register">
     <div class="container">
       <div class="max-w-lg">
         <h2>Заповніть форму</h2>
