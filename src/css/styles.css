@@ -105,3 +105,12 @@ html {
 .intro {
   height: calc(var(--vh, 1vh) * 100) !important;
 }
+
+.animated {
+  opacity: 0;
+  transition: opacity .8s cubic-bezier(.77, 0, .175, 1);
+}
+
+.animated.is-shown {
+  opacity: 1;
+}

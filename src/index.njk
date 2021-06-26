@@ -25,9 +25,16 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap">
+
+  <link rel="stylesheet" href="/css/styles.css"></link>
 </head>
 <body class="selection:bg-[#7b5a8c]">
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+  {# {% include 'includes/intro.njk' %} #}
+  {% include 'includes/about.njk' %}
+  {% include 'includes/details.njk' %}
+  {% include 'includes/lineup.njk' %}
+  {# {% include 'includes/register.njk' %} #}
+  {% include 'includes/contacts.njk' %}
+  <script src="/js/scripts.js"></script>
 </body>
 </html>
