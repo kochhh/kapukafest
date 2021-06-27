@@ -49,11 +49,12 @@ const SmmoothScroll = {
 
 const Animations = {
   init() {
+    document.querySelector('main').classList.add('is-shown')
     setTimeout(() => {
       const intro = document.querySelector('.intro')
       if (!intro) return
       document.querySelector('.intro').classList.add('is-shown')
-    }, 150)
+    }, 300)
   }
 }
 
