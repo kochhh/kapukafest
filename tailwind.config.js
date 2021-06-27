@@ -2,17 +2,20 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
-  purge: [
-    './index.html',
-    './src/**/*.{js,vue}'
-  ],
-  darkMode: false,
+  purge: {
+    mode: 'all',
+    preserveHtmlElements: false,
+    content: [
+      './src/**/*.njk',
+      './src/css/*.css',
+      './src/js/*.js',
+    ]
+  },
   theme: {
     screens: {
       sm: '576px',
       md: '768px',
       lg: '992px',
-      // xl: '1200px',
     },
     scale: {
       '108': '1.08',
@@ -42,7 +45,7 @@ module.exports = {
       },
       keyframes: {
         'animate-scale': {
-          '0%, 100%': { transform: 'scale(1)' },
+          '0%, 100%': { transform: 'none' },
           '50%': { transform: 'scale(1.03)' },
         }
       },
@@ -57,11 +60,18 @@ module.exports = {
   },
   variants: {
     extend: {
+      opacity: [
+        'disabled'
+      ],
+      cursor: [
+        'disabled'
+      ],
       textColor: [
         'selection'
       ],
       backgroundColor: [
-        'selection'
+        'selection',
+        'disabled'
       ],
     },
   },
@@ -88,12 +98,9 @@ module.exports = {
           },
           '@screen lg': {
             maxWidth: '920px',
-          },
-          // '@screen xl': {
-          //   maxWidth: '1140px',
-          // },
+          }
         }
       })
-    },
-  ]
+    }
+  ],
 }

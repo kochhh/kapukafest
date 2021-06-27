@@ -29,12 +29,14 @@
   <link rel="stylesheet" href="/css/styles.css"></link>
 </head>
 <body class="selection:bg-[#7b5a8c]">
-  {# {% include 'includes/intro.njk' %} #}
-  {% include 'includes/about.njk' %}
-  {% include 'includes/details.njk' %}
-  {% include 'includes/lineup.njk' %}
-  {# {% include 'includes/register.njk' %} #}
-  {% include 'includes/contacts.njk' %}
-  <script src="/js/scripts.js"></script>
+  <main>
+    {% include 'includes/intro.njk' %}
+    {% include 'includes/about.njk' %}
+    {% include 'includes/details.njk' %}
+    {% include 'includes/lineup.njk' %}
+    {% include 'includes/register.njk' %}
+    {% include 'includes/contacts.njk' %}
+  </main>
+  <script src="/js/app.js"></script>
 </body>
 </html>

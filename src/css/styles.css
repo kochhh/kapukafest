@@ -18,7 +18,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block py-2 px-6 font-bold text-center rounded-md shadow-md border border-transparent focus:outline-none focus:ring transition disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply inline-block py-2 px-6 font-bold text-center rounded-md shadow-md border border-transparent focus:outline-none focus:ring transition disabled:opacity-50 disabled:cursor-not-allowed no-underline;
   }
 
   .btn-green {
@@ -102,10 +102,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.intro {
-  height: calc(var(--vh, 1vh) * 100) !important;
-}
-
 .animated {
   opacity: 0;
   transition: opacity .8s cubic-bezier(.77, 0, .175, 1);
@@ -113,4 +109,17 @@ html {
 
 .animated.is-shown {
   opacity: 1;
+}
+
+.intro {
+  height: calc(var(--vh, 1vh) * 100) !important;
+}
+
+.intro.animated {
+  transform: scale(.9);
+  transition: opacity 1.5s cubic-bezier(.77, 0, .175, 1), transform 1.5s cubic-bezier(.77, 0, .175, 1);
+}
+
+.intro.animated.is-shown {
+  transform: scale(1);
 }
