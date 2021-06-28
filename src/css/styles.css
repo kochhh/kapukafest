@@ -69,6 +69,10 @@
     @apply bg-gray-800;
   }
 
+  .prose h3 {
+    @apply text-white;
+  }
+
   .prose a {
     @apply text-white font-bold underline hover:no-underline;
   }
