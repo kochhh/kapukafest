@@ -53,6 +53,9 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.white'),
+            a: {
+              color: theme('colors.white'),
+            },
           },
         },
       }),
