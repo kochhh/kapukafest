@@ -69,12 +69,12 @@
     @apply bg-gray-800;
   }
 
-  .prose h3 {
+  .prose a code, .prose code, .prose h1, .prose h2, .prose h3, .prose h4, .prose thead {
     @apply text-white;
   }
 
   .prose a {
-    @apply text-white font-bold underline hover:no-underline;
+    @apply font-bold underline hover:no-underline;
   }
 
   .prose ul > li:last-child {
