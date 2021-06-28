@@ -18,7 +18,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block py-2 px-6 font-bold text-center rounded-md shadow-md border border-transparent focus:outline-none focus:ring transition disabled:opacity-50 disabled:cursor-not-allowed no-underline;
+    @apply inline-block py-2 px-6 font-bold text-center rounded-md shadow-md border border-transparent focus:outline-none focus:ring transition disabled:opacity-50 disabled:cursor-not-allowed no-underline w-full sm:w-auto;
   }
 
   .btn-green {
@@ -34,7 +34,7 @@
   }
 
   .btn-iconic {
-    @apply inline-flex items-center space-x-2;
+    @apply inline-flex items-center space-x-2 justify-center;
   }
 
   .btn-telegram {

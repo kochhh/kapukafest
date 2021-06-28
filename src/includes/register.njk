@@ -1,86 +1,11 @@
 <section class="bg-[#493b69] text-white py-8 md:py-10" id="register">
   <div class="container">
     <div class="max-w-lg">
-      <h2>Форма реєстрації</h2>
-      <form id="register" class="mb-8">
-        <div class="mb-4 md:flex md:space-x-4">
-          <div class="mb-4 md:mb-0 md:flex-1">
-            <label for="firstname" class="sr-only">Iм'я*</label>
-            <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Iм'я*" required>
-          </div>
-          <div class="md:flex-1">
-            <label for="lastname" class="sr-only">Прiзвище*</label>
-            <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Прiзвище*" required>
-          </div>
-        </div>
-        <div class="mb-4">
-          <label for="phone" class="sr-only">Телефон*</label>
-          <input type="text" id="phone" name="phone" inputmode="tel" class="form-control" placeholder="Телефон*" required>
-        </div>
-        <div class="mb-4">
-          <label for="email" class="sr-only">E-mail*</label>
-          <input type="email" id="email" name="email" class="form-control" placeholder="E-mail*" required>
-        </div>
-        <div class="mb-4">
-          <label for="accommodation" class="sr-only">Тип проживання</label>
-          <select id="accommodation" name="accommodation" class="form-control">
-            <option value="" selected disabled>Оберіть бажаний тип проживання</option>
-            <option value="Готель">Готель</option>
-            <option value="Наметове містечко">Наметове містечко</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="payment" class="sr-only">Спосіб оплати</label>
-          <select id="payment" name="payment" class="form-control">
-            <option value="" selected disabled>Оберіть спосіб оплати</option>
-            <option value="Готівкою">Готівкою</option>
-            <option value="На картку ПриватБанк">На картку ПриватБанк</option>
-            <option value="На картку monobank">На картку monobank</option>
-            <option value="Iнший (вкажіть в коментарях)">Iнший (вкажіть в коментарях)</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="message" class="sr-only">Коментарі</label>
-          <textarea id="message" name="message" rows="4" cols="30" class="form-control" placeholder="Коментарі"></textarea>
-        </div>
-        <div class="mt-6">
-          <button type="submit" class="btn btn-iconic btn-green">
-            <span class="submit-label">Надіслати</span>
-            <span class="submit-loading hidden" aria-hidden="true">Секунду…</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="submit-icon animate-spin h-4 w-4 hidden" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-            </svg>
-          </button>
-          <div class="alert alert-success mt-4 hidden" aria-hidden="true">
-            <div class="alert-inner">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-8 w-8" viewBox="0 0 16 16" aria-hidden="true">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-              </svg>
-              <div>
-                <h3>Дякуємо за реєстрацію!</h3>
-                <p>Незабаром ми зв'яжемося з&nbsp;вами для&nbsp;уточнення деталей.</p>
-              </div>
-            </div>
-          </div>
-          <div class="alert alert-error mt-4 hidden" aria-hidden="true">
-            <div class="alert-inner">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-8 w-8" viewBox="0 0 16 16" aria-hidden="true">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-              </svg>
-              <div>
-                <p>Виникла помилка. Спробуйте оновити сторінку або&nbsp;зайдіть пізніше.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
+      <h2>Реєстрація</h2>
       <div class="prose mb-4">
-        <p>Або просто напишіть нам в месенджер:</p>
+        <p>Напишіть нам в месенджер:</p>
       </div>
-      <div class="flex flex-col items-start sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+      <div class="flex flex-col items-start sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
         <a href="https://t.me/kapuka_mmc" target="_blank" rel="nofollow noopener" class="btn btn-iconic btn-telegram">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" width="14" height="16" viewBox="0 0 448 512"><path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>
           <span>Telegram</span>
@@ -94,6 +19,84 @@
           <span>Facebook</span>
         </a>
       </div>
+      <div class="prose mb-4">
+        <p>Або заповніть форму:</p>
+      </div>
+      <form id="register">
+        <fieldset>
+          <div class="mb-4 md:flex md:space-x-4">
+            <div class="mb-4 md:mb-0 md:flex-1">
+              <label for="firstname" class="sr-only">Iм'я*</label>
+              <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Iм'я*" required>
+            </div>
+            <div class="md:flex-1">
+              <label for="lastname" class="sr-only">Прiзвище*</label>
+              <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Прiзвище*" required>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="sr-only">Телефон*</label>
+            <input type="text" id="phone" name="phone" inputmode="tel" class="form-control" placeholder="Телефон*" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="sr-only">E-mail*</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail*" required>
+          </div>
+          <div class="mb-4">
+            <label for="accommodation" class="sr-only">Тип проживання</label>
+            <select id="accommodation" name="accommodation" class="form-control">
+              <option value="" selected disabled>Оберіть бажаний тип проживання</option>
+              <option value="Готель">Готель</option>
+              <option value="Наметове містечко">Наметове містечко</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="payment" class="sr-only">Спосіб оплати</label>
+            <select id="payment" name="payment" class="form-control">
+              <option value="" selected disabled>Оберіть спосіб оплати</option>
+              <option value="Готівкою">Готівкою</option>
+              <option value="На картку ПриватБанк">На картку ПриватБанк</option>
+              <option value="На картку monobank">На картку monobank</option>
+              <option value="Iнший (вкажіть в коментарях)">Iнший (вкажіть в коментарях)</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="sr-only">Коментарі</label>
+            <textarea id="message" name="message" rows="4" cols="30" class="form-control" placeholder="Коментарі"></textarea>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-iconic btn-green">
+          <span class="submit-label">Надіслати</span>
+          <span class="submit-loading hidden" aria-hidden="true">Секунду…</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="submit-icon animate-spin h-4 w-4 hidden" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+        </button>
+        <div class="alert alert-success mt-4 hidden" aria-hidden="true">
+          <div class="alert-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-8 w-8" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+            </svg>
+            <div>
+              <h3>Дякуємо за реєстрацію!</h3>
+              <p>Незабаром ми зв'яжемося з&nbsp;вами для&nbsp;уточнення деталей.</p>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-error mt-4 hidden" aria-hidden="true">
+          <div class="alert-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-8 w-8" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+            </svg>
+            <div>
+              <p>Виникла помилка. Спробуйте оновити сторінку або&nbsp;зайдіть пізніше.</p>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </section>
