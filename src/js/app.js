@@ -12,7 +12,7 @@ const GetActualVh = {
   }
 }
 
-const SmmoothScroll = {
+const SmoothScroll = {
   init() {
     const scrollBehaviorSupported = 'scroll-behavior' in document.documentElement.style
     if (scrollBehaviorSupported) return
@@ -78,7 +78,8 @@ const EmailJs = {
   init() {
     const form = document.getElementById('register')
     if (!form) return
-    form.addEventListener('submit', (evt) => {
+
+    form.addEventListener('submit', evt => {
       const button = evt.target.querySelector('button[type="submit"]')
       const label = button.querySelector('.submit-label')
       const loading = button.querySelector('.submit-loading')
@@ -116,6 +117,7 @@ const EmailJs = {
       }
 
       buttonBefore()
+
       emailjs.sendForm('service_bbd0avn', 'template_eq8mxae', evt.target, 'user_zJwztgGwINLHuIaEBLa44')
       // emailjs.sendForm('service_e9mtg6c', 'template_2iz1mfn', evt.target, 'user_gKnCkib0s79NdDgNfEnAo') // test
         .then(() => {
@@ -132,7 +134,7 @@ const EmailJs = {
 
 window.addEventListener('DOMContentLoaded', () => {
   GetActualVh.init()
-  SmmoothScroll.init()
+  SmoothScroll.init()
   Parallaxx.init()
   EmailJs.init()
 })
