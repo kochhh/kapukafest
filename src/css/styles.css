@@ -115,9 +115,9 @@ html {
   opacity: 1;
 }
 
-.intro {
+/* .intro {
   height: calc(var(--vh, 1vh) * 100) !important;
-}
+} */
 
 .intro.animated {
   transform: scale(.9);

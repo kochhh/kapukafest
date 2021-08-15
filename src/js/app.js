@@ -1,16 +1,16 @@
 import emailjs from 'emailjs-com'
 
-const GetActualVh = {
-  init() {
-    let vh = window.innerHeight * .01
-    document.documentElement.style.setProperty('--vh', `${vh}px`)
+// const GetActualVh = {
+//   init() {
+//     let vh = window.innerHeight * .01
+//     document.documentElement.style.setProperty('--vh', `${vh}px`)
 
-    window.addEventListener('resize', () => {
-      let vh = window.innerHeight * .01
-      document.documentElement.style.setProperty('--vh', `${vh}px`)
-    })
-  }
-}
+//     window.addEventListener('resize', () => {
+//       let vh = window.innerHeight * .01
+//       document.documentElement.style.setProperty('--vh', `${vh}px`)
+//     })
+//   }
+// }
 
 const SmoothScroll = {
   init() {
@@ -133,7 +133,7 @@ const EmailJs = {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  GetActualVh.init()
+  // GetActualVh.init()
   SmoothScroll.init()
   Parallaxx.init()
   EmailJs.init()
